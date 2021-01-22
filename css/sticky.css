@@ -1,0 +1,25 @@
+/* Sticky navigation */
+.sticky{
+    background-color: rgba(0, 0, 0, 0.5) ;
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: 80px;
+
+}
+@media(max-width:800px){
+    .sticky{
+        height: 65px;
+    }}
+@media(max-width:411px){
+    .sticky{
+        height: 70px;
+    }
+    }
+@media(max-width:360px){
+.sticky{
+    height: 70px;
+}
+}

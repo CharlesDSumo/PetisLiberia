@@ -1,0 +1,2117 @@
+
+html, body{
+	margin:0;
+	font-size: 100%;
+	background: #fff;
+	font-family: 'Open Sans', sans-serif;
+}
+body a {
+	text-decoration:none;
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+	font-family: 'Open Sans', sans-serif;
+}
+:root{
+    --light:#f8f9fa;
+    --dark:#343a40;
+    --shadow:rgba(255, 255, 255, 0.5);
+    --redish:#dc3545;
+    --charles-color:#e83e8c;
+    --cd-hover: #007bff;
+    --cd-background:rgb(207, 247, 247);
+    --great: rgb(199, 184, 184);
+    --determine: rgb(15, 15, 15);
+  --indigo: #6610f2;
+  --petis-color: #800080;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --deep-yellow:#e0ac1c;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+}
+
+a:hover{
+ text-decoration:none;
+}
+input[type="button"],input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+	font-family: 'Montserrat', sans-serif;
+}	
+p{
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+img {
+    border: 0;
+    width: 100%;
+}
+
+
+/*-- header --*/
+.petis-nav{text-align:right;}
+.petis-nav .petis-ul li{
+	text-align:right;
+	list-style-type:none;
+	display:inline-block;
+	padding:1.5rem 1rem;
+	font-size:1rem;
+}
+
+.petis-ul li a{
+	color: var(--light);
+}
+
+.petis-ul li a:hover{
+		color:var(--petis-color);
+	}
+
+
+.wrapper_top_w3layouts {
+    position: relative;
+}
+.petis-logo {
+    position: absolute;
+    z-index: 99;
+    left: .2rem;
+    top: 5%;
+}
+.petis-ul a.petis-active{
+	color:var(--petis-color);
+	}
+.petis-logo.inner_page_log {
+    position: absolute;
+    z-index: 99;
+    left: 2%;
+    margin-top: 47px;
+}
+.navbar-brand {
+    font-size: 1.2em;
+    color: var(--light);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 0;
+    height: auto;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.31);
+}
+.navbar-brand span {
+    padding: 0.3em .3em;
+    font-weight: 800;
+    display: inline-block;
+    background: var(--light);
+    color: var(--petis-color);
+}
+.navbar-brand i {
+    padding: 0.5em 0.5em 0.5em 0em;
+    font-style: normal;
+    display: inline-block;
+    font-weight: 100;
+	color: var(--light);
+}
+a.navbar-brand:hover {
+    color: var(--light);
+}
+ ul.top_icons {
+    position: absolute;
+    z-index: 9;
+    left: 45%;
+    margin-top: 3em;
+    bottom: 29%;
+}
+ul.top_icons li{
+	display:inline-block;
+	margin-right:16px;
+}
+ul.top_icons li a {
+    color: var(--light);
+    font-size:14px;
+}
+ul.top_icons li a:hover {
+    color: var(--danger);
+}
+.top_nav_right {
+    width: 17%;
+    margin-top: 47px;
+    position: absolute;
+    z-index: 99;
+    right: -2%;
+}
+/* Sticky navigation */
+.sticky{
+	   width: 100%;
+	   position: fixed;
+	   top: 0;
+	   left: 0;
+	   padding: 0 1.2rem;
+	   z-index: 9999;
+   
+   }
+/*-- menu --*/
+.mobile-nav-button {
+    position: fixed;
+    margin: 47px 0 0 0;
+    right: 15%;
+    top: 0;
+    z-index: 9999;
+    cursor: pointer;
+    width: 38px;
+    height: 36px;
+    background: var(--petis-color);
+    display:none;
+}
+
+.mobile-menu ul li {
+    list-style: none;
+    margin-bottom: 1.2em;
+	display: block;
+	text-align: left;
+	
+}
+
+.mobile-menu ul li a {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--light);
+    font-size: 1em;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    padding: 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.open>ul.dropdown-menu.agile_short_dropdown {
+    display: block;
+    transform: none !important;
+    min-width: 65%;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    left: 18%;
+}
+
+.open>ul.dropdown-menu.agile_short_dropdown li {
+    margin: 0 !important;
+}
+
+ul.dropdown-menu.agile_short_dropdown>li>a:hover {
+    background: none;
+}
+
+.mobile-menu ul li a:after {
+    content: '';
+    background: #7aba1e;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.mobile-menu ul li a:hover,
+.mobile-menu ul li.active a {
+    color: var(--petis-color)
+}
+
+.mobile-menu ul li a:hover:after,
+.mobile-menu ul li.active a:after {
+    right: 0;
+}
+
+li.dropdown.act a.petis_icons_act {
+    background: #0e0e0e;
+    color: #fff;
+}
+
+.mobile-menu img {
+    position: absolute;
+    width: 190px;
+    display: block;
+    left: 50%;
+    top: 3rem;
+    transform: translatex(-50%);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-menu--open {
+    opacity: 1;
+    right: 0%;
+}
+
+.dropdown.active.open a ul.dropdown-menu.agile_short_dropdown li a.w3_icon_1:after {
+    background: none !important;
+}
+
+/*-- //menu --*/
+/*-- /search --*/
+
+.petis-header-buttons {
+    position: fixed;
+    display: inline-block;
+    top: 47px;
+    right: 18%;
+    z-index: 99;
+}
+.petis-header-buttons li {
+	display: inline-block;
+}
+
+.petis-search-trigger,
+.petis-nav-trigger {
+	position: relative;
+	display: block;
+	width: 36px;
+    height:36px;
+	overflow: hidden;
+	white-space: nowrap;
+	color: transparent;
+	z-index: 3;
+	background: #146eb4;
+	border: 1px solid #146eb4;
+}
+
+.petis-search-trigger::before,
+.petis-search-trigger::after {
+	/* search icon */
+	content: '';
+	position: absolute;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	/* Force Hardware Acceleration in WebKit */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.petis-search-trigger::before {
+    top: 6px;
+    left: 8px;
+    width: 18px;
+    height: 18px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.petis-search-trigger::after {
+    height: 3px;
+    width: 8px;
+    background: #fff;
+    bottom: 9px;
+    right: 5px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.petis-search-trigger span {
+	/* container for the X icon */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.petis-search-trigger span::before,
+.petis-search-trigger span::after {
+	content: '';
+	position: absolute;
+	display: inline-block;
+	height: 3px;
+	width: 22px;
+	top: 50%;
+	margin-top: -2px;
+	left: 50%;
+	margin-left: -11px;
+	background: #fff;
+	opacity: 0;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.petis-search-trigger span::before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.petis-search-trigger span::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.petis-search-trigger.search-is-visible::before,
+.petis-search-trigger.search-is-visible::after {
+	/* hide search icon */
+	-moz-opacity: 0;
+	opacity: 0;
+}
+
+.petis-search-trigger.search-is-visible span::before,
+.petis-search-trigger.search-is-visible span::after {
+	/* show close icon */
+	-moz-opacity: 1;
+	opacity: 1;
+}
+
+.petis-search-trigger.search-is-visible span::before {
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+
+.petis-search-trigger.search-is-visible span::after {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.petis-search {
+	position: absolute;
+	width: 100%;
+	top: 12%;
+	left: 0;
+	z-index: 3;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+	-moz-transition: opacity .3s 0s, visibility 0s .3s;
+	transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.petis-search input {
+	border-radius: 0;
+	border: none;
+	background: rgba(0, 0, 0, 0.75);
+	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	font-size: 1em;
+    padding: 1.5em 3em;
+	color: #fff;
+	letter-spacing: 3px;
+    
+}
+
+.petis-search input::-webkit-input-placeholder {
+	color: #fff !important;
+}
+
+.petis-search input::-moz-placeholder {
+	color: #fff !important;
+}
+
+.petis-search input:-moz-placeholder {
+	color: #fff !important;
+}
+
+.petis-search input:-ms-input-placeholder {
+	color: #fff !important;
+}
+
+.petis-search input:focus {
+	outline: none;
+}
+
+.petis-search.is-visible {
+	-moz-opacity: 1;
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+	-moz-transition: opacity .3s 0s, visibility 0s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+/*-- //search --*/
+
+/*-- //header --*/
+
+
+/* book */
+.book {
+    background: var(--petis-color);
+}
+.book-background{
+    padding: 7em 0;
+}
+.book h3 {
+    color:var(--light);
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: .5em;
+}
+.book p {
+    color: var(--light);
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 70%;
+    margin: 2em auto 0;
+    line-height: 1.8em;
+}
+.book ul {
+    text-align: center;
+}
+.book li {
+    list-style-type: none;
+    display: inline-block;
+}
+.readmore-w3 {
+    margin-top: 3em;
+}
+.readmore-w3 a {
+    color: var(--light);
+    font-size: 16px;
+    padding: .7em 2em;
+    background: var(--primary);
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+	font-family: 'Montserrat', sans-serif;
+}
+a.readmore.register {
+    background: #ff4f81;
+}
+a.readmore.admission {
+    background: #2dde98;
+}
+.readmore-w3 a:hover {
+    background: #ff4c4c;
+}
+/* //book */
+
+/* pop up for sign in and sign up form */
+#small-dialog1 h3{
+    color: #ff4c4c;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#small-dialog1 input[type="text"], #small-dialog1 input[type="password"], #small-dialog1 input[type="email"], #small-dialog1 input[type="password"] {
+    padding: 12px 16px;
+    font-size: 14px;
+    border: 1px solid #808080;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+div#small-dialog1,div#small-dialog2 {
+    padding: 50px;
+}
+form ul {
+    float: left;
+    list-style-type: none;
+}
+form a {
+    color: #000;
+    float: right;
+    font-size: 13px;
+}
+#small-dialog1 input[type="submit"], #small-dialog1 input[type="submit"] {
+    background: #146eb4;
+    border: none;
+    padding: 9px 10px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 35%;
+    letter-spacing: 2px;
+    display: block;
+	font-family: 'Montserrat', sans-serif;
+}
+.modal-content{
+    border-radius: 0px;
+}
+.modal-dialog {
+    margin: 10px auto;
+}
+ul li input[type="checkbox"]+label {
+    position: relative;
+    padding-left: 23px;
+    border: #F0F8FF;
+    color: #000;
+    display: inline-block;
+    font-size: 13px;
+}
+ul li input[type="checkbox"]+label span:first-child {
+    width: 17px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid #000;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 4px;
+}
+input[type="radio"], input[type="checkbox"] {
+    display: none;
+}
+ul li input[type="checkbox"]:checked+label span:first-child:before {
+    content: "";
+    background: url(../images/tick.png)no-repeat;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
+}
+#small-dialog2 h3 {
+    color: #ff4c4c;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#small-dialog2 input[type="text"], #small-dialog input[type="password"], #small-dialog2 input[type="email"], #small-dialog2 input[type="password"], #small-dialog2 input[type="tel"], select {
+    padding: 12px 16px;
+    font-size: 14px;
+    border: 1px solid #808080;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    margin-bottom: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+#small-dialog input[type="submit"], #small-dialog2 input[type="submit"] {
+    background: #146eb4;
+    border: none;
+    padding: 9px 10px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 45%;
+    letter-spacing: 2px;
+    display: block;
+	font-family: 'Montserrat', sans-serif;
+}
+/* //pop up for sign in and sign up form */
+
+/*-- banner --*/ 
+.petis-banner{
+	position: relative;
+}   
+.banner-dott {
+    background: url(../images/dott.png)repeat 0px 0px;
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+}
+.banner-dott1 {
+    background: url(../images/dott.png)repeat 0px 0px;
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+}
+
+/*-- banner-text --*/ 
+.petis-header{
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    text-align: center;
+    left: 0;
+    width: 100%;
+}
+.petis-banner-info h3 {
+    color: var(--petis-color);
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.31);
+}
+
+.petis-banner-info h3.second {
+	font-weight: 200;
+	color:var(--light); 
+	top:1rem;
+	font-size:1.8rem;
+}
+.petis-banner-info h3 span{
+	    background: var(--primary);
+    padding: 0 15px;
+}
+.petis-banner-info {
+    text-align: left;
+    padding: 15em 0 20em;
+}
+.petis-banner-info p {
+    color: var(--primary);
+    font-size: 1em;
+    line-height: 1.8em;
+    letter-spacing: 5px;
+    margin: 2em auto;
+}
+.petis_more{
+	position:relative;
+}
+.petis_more a {
+    font-size: 15px;
+    color: var(--light);
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+    background: var(--petis-color);
+    padding: 10px 20px;
+}
+.petis_more a:focus{
+	outline:none;
+}
+.petis_more a:hover{
+	color:var(--light);
+}
+.petis_more a:before,.petis_more a:after{
+	content: '';
+    background: var(--light);
+    width: 85%;
+    height: 2px;
+    position: absolute;
+    left: 105%;
+    top: 46%;
+}
+.petis_more a:after{
+	-webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+	    -webkit-transform: scale3d(0, 1, 1);
+    transform: scale3d(0, 1, 1);
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    -webkit-transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.petis_more a:hover::before, .petis_more a:hover::after {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+.petis_more a::after {
+    background: var(--danger);
+}
+/*-- //banner-text --*/
+/*-- banner-top --*/
+.petis-banner-top{
+    background: url(../images/graduation.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;
+	min-height:780px;
+}
+.petis-banner-top1{
+	background: url(../images/petis-student1.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;
+	min-height:780px;
+}
+.petis-banner-top2{
+	background: url(../images/graduation-1.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;	
+	min-height:780px;
+}
+.petis-banner-top3{
+	background: url(../images/petis-staff.jpg) no-repeat 0px 0px;
+    background-size: cover;	
+	-webkit-background-size: cover;	
+	-moz-background-size: cover;
+	-o-background-size: cover;		
+	-moz-background-size: cover;	
+	min-height:780px;
+}
+
+/*-- //banner-top --*/ 
+/*--slider--*/
+#slider2,
+#slider3 {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 0 auto;
+}
+.rslides_tabs li:first-child {
+  margin-left: 0;
+}
+.rslides_tabs .rslides_here a {
+  background: rgba(255,255,255,.1);
+  color:var(--light);
+  font-weight: bold;
+}
+.events {
+  list-style: none;
+}
+.callbacks_container {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+.callbacks {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.callbacks li {
+  position: absolute;
+  width: 100%;
+}
+.callbacks img {
+  position: relative;
+  z-index: 1;
+  height: auto;
+  border: 0;
+}
+.callbacks .caption {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	font-size: 20px;
+	text-shadow: none;
+	color: var(--light);
+	left: 0;
+	right: 0;
+	padding: 10px 20px;
+	margin: 0;
+	max-width: none;
+	top: 10%;
+	text-align: center;
+}
+
+.callbacks_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top:55%;
+    left: 40px;
+    opacity: 0.7;
+    z-index: 3;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 34px;
+    width: 34px;
+    background: url(../images/left.png) no-repeat 0px 0px;
+}
+.callbacks_nav.next {
+    left: auto;
+    background: url(../images/right.png) no-repeat 0px 0px;
+    right: -62px;
+}
+.callbacks_nav.prev {
+    left: auto;
+    background: url(../images/left.png) no-repeat 0px 0px;
+    left: -58px;
+}
+#slider3-pager a {
+  display: inline-block;
+}
+#slider3-pager span{
+  float: left;
+}
+#slider3-pager span{
+	width:100px;
+	height:15px;
+	background:var(--light);
+	display:inline-block;
+	border-radius:30em;
+	opacity:0.6;
+}
+#slider3-pager .rslides_here a {
+  background: --light;
+  border-radius:30em;
+  opacity:1;
+}
+#slider3-pager a {
+  padding: 0;
+}
+#slider3-pager li{
+	display:inline-block;
+}
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+}
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display:none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.rslides li{
+  position: relative;
+  display:block;
+  float: left;
+}
+.rslides img {
+  height: auto;
+  border: 0;
+  }
+.callbacks_tabs {
+    list-style: none;
+    position: absolute;
+    bottom: 6%;
+    left: 46.3%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    z-index: 99;
+}
+.slider-top span{
+	font-weight:600;
+}
+.callbacks_tabs li {
+    display:inline-block;
+    margin: 0px;
+}
+/*----*/
+.callbacks_tabs a{
+ visibility: hidden;
+}
+.callbacks_tabs a:after {
+    content: "\f111";
+    font-size: 0;
+    font-family: FontAwesome;
+    visibility: visible;
+    display: block;
+    height:10px;
+    width:10px;
+    display: inline-block;
+	border:2px solid #fff;
+    background: #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+}
+.callbacks_here a:after{
+       background: none;
+	border:2px solid #fff;
+}
+/*-- //slider --*/
+
+.thim-click-to-bottom {
+   position: absolute;
+    bottom: 17%;
+    left: 15%;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+    z-index: 99;
+}
+.thim-click-to-bottom i {
+    color: #fff;
+}
+.rotate a {
+    border: 2px solid #fff;
+    font-size: 20px;
+    width: 40px;
+    height: 65px;
+    padding: 12px;
+    line-height: 65px;
+	border-radius: 30px;
+    text-align: center;
+}
+@-webkit-keyframes bounce {
+	0%, 20%, 60%, 100%  { -ms-transform: translateY(0); }
+	0%, 20%, 60%, 100%  { -o-transform: translateY(0); }
+	0%, 20%, 60%, 100%  { -moz-transform: translateY(0); }
+	0%, 20%, 60%, 100%  { -webkit-transform: translateY(0); }
+    40%  { -webkit-transform: translateY(-20px); }
+	80% { -webkit-transform: translateY(-10px); }
+}
+/*-- hover-effect --*/
+/* //banner */
+
+
+/* about bottom */
+.aboutleft {
+    padding: 0;
+}
+.aboutleft img{
+	border-radius: 5px;
+}
+.aboutleft img.first-image{
+	width: 32%;
+	top: 5rem;
+}
+.aboutleft img.second-image{
+	width: 30% !important;
+	top: 2em;
+	left: 12em;
+	position: absolute;
+	transform: rotate(23deg)
+}
+
+.aboutleft img:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+.about {
+    padding: 5em 0;
+}
+.aboutright h3 {
+    text-transform: uppercase;
+    line-height: 35px;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.aboutright h4 {
+    margin: 1em 0;
+    font-style: italic;
+    font-family: initial;
+    font-size: 20px;
+}
+.aboutright p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    color: #636363;
+    width: 95%;
+    margin: 2em 0;
+}
+.aboutright {
+    padding: 4em 7em 4em 4em;
+}
+.petis-button a {
+    outline: none;
+    padding: 10px 30px;
+    border: none;
+    font-size: 15px;
+    color: #333;
+    margin: 1em 0 0;
+    width: 100%;
+    text-align: left;
+    text-transform: capitalize;
+    background: transparent;
+    border: 2px solid #333;
+    letter-spacing: 1px;
+}
+.petis-button a:hover, .services-grid a:hover {
+    background-color: #146eb4;
+    border: 2px solid #146eb4;
+    color: #fff;
+}
+.petis-button {
+    margin-top: 3em;
+}
+/* //about bottom */
+
+/* Events sections */
+	.petis-events-head{
+		padding: .3rem 10% 1rem 10%;
+		/* text-align: center; */
+	}
+	.events-main{
+		padding-bottom: 1rem;
+	}
+	.petis-events-head .events-heading{
+		font-family: 'Times New Roman', Times, serif, sans-serif;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: left;
+		font-size: 1.5rem;
+		padding-bottom: 1em;
+	}
+	.petis-events-head p{
+		font-size: 12px;
+		color: #55585c;
+		padding-top: .2rem;
+	}
+	.petis-events-head h3{
+		font-size: 1.3rem;
+	}
+/* //Events sections */
+
+/* Petis Courses */
+.petis-courses{
+	background-image: url('../images/petis-student2.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: var(--light);
+	text-align: center;
+}
+.petis-course{
+	padding: 1rem 7rem 1rem 7rem;
+}
+.coursename{
+	background: rgba(0, 0, 0, 0.5);
+	padding:1rem;
+}
+/*-- //petis-courses --*/
+/*-- counter --*/
+.petis-center{
+	text-align: center;
+}
+.counter-icons{
+	/* padding-left: 2rem; */
+	font-size: 3rem;
+	padding-bottom:  1rem;
+	color: var(--petis-color)
+}
+.petis_stats_left p {
+    letter-spacing: 2px;
+    color: var(--primary);
+    line-height: inherit;
+    margin: 0em 0 0.1em 0;
+	font-family: 'Montserrat', sans-serif;
+	/* text-align: center; */
+}
+p.counter {
+	font-size: .2rem
+}
+.petis_stats_left h3 {
+    font-size: 3rem;
+    color: #525252;
+    letter-spacing: 2px;
+    margin: 0;
+	font-weight: 600;
+	/* text-align: center */
+}
+/*-- counter --*/
+
+
+.petis-color{
+	color: var(--petis-color)
+}
+.petis-bg{
+	background: var(--petis-color)
+}
+
+ /* Petis Administration and staff  */
+ .admin-staff-head{
+	margin-top: 2rem;
+	color: var(--light);
+	text-align: center;
+ }
+ .petis-admin{
+	 padding: 3rem;
+ }
+ .admin-para{
+	 color: var(--primary);
+	 padding-bottom: 2.5rem;
+	 font-family: 'Times New Roman', Times, serif;
+	 font-weight: bold;
+	 font-size: 2rem;
+	 text-align: left;
+ }
+ .petis-heading1{
+	 font-size: 1.5rem;
+	 font-family: sans-serif;
+ }
+ /* //Petis Administration and staff  */
+/* footer section */
+ .footer{
+	 padding:1rem 7% 1rem 7%;
+	 background: #000;
+	 color: var(--light);
+	 text-align: left;
+	 text-align: center;
+	}
+	.footer h2{
+		padding-bottom: 1rem;
+		color: var(--light);
+		font-family: 'Times New Roman', Times, serif, sans-serif;
+		color: var(--petis-color);
+	}
+	.footer p{
+		padding-bottom: .4rem;
+	}
+	.footer .fa{
+		color: #343a40;
+	}
+	.footer a{
+		color: #343a40;
+	}
+	.footer ul li{
+		list-style-type: none;
+		padding-bottom: .5rem;
+	}
+	.footer a:hover{
+		color: var(--light);
+	}
+	.topborder{
+		padding-top: 2.2rem;
+		clear: both;
+	}
+	.top-border{
+		width: 100%;
+		border-top: 1px solid #ccc;
+	}
+	.petis-left-align{
+		text-align: left;
+	}
+	.abt-dev{
+		color: 
+	}
+/* //Footer section */
+
+/*-- to-top --*/
+#movetop {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 15px;
+    z-index: 99;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-width: initial;
+	background: var(--petis-color);
+	color: var(--light);
+    border-style: none;
+    border-color: initial;
+    -o-border-image: initial;
+    border-image: initial;
+    outline: none;
+    padding: 0px;
+    border-radius: 4px;
+    opacity: .8;
+    transition: all 20.5s ease-out 20s;
+}
+/*-- //to-top --*/
+.petis-color{
+	color: var(--petis-color)
+}
+/*-- Responsive design for devices --*/
+
+@media(max-width: 1440px){
+	.petis-nav .petis-ul li{
+		padding:1.5em 1.2em;
+		font-size: 1.4rem
+	}
+	.petis-logo {
+		left: .99rem;
+		top: 1rem;
+	}
+	.mobile-nav-button {
+		right: 11%;
+	}
+	.petis-header-buttons {
+		right: 14%;
+	}
+	.thim-click-to-bottom {
+		left: 10%;
+	}
+	.aboutright {
+		padding: 2em 7em 3em 4em;
+	}
+	.petis_stats_left h3 {
+		font-size: 1em;
+	}
+	.petis_stats_left p {
+		font-size: 2.5em;
+	}
+	
+	.petis_social_icons ul li a i {
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+	}
+}
+@media(max-width: 1366px){
+	.petis-nav .petis-ul li{
+		padding:1.2em .8em;
+		font-size: 1.4rem
+	}
+	.petis-logo {
+		left: .9rem;
+	}	
+	.mobile-nav-button {
+		right: 8%;
+	}
+	.petis-header-buttons {
+		right: 11%;
+	}
+	.thim-click-to-bottom {
+		left: 7%;
+	}
+	.petis-banner-info h3 {
+		font-size: 2.5em;
+		margin-bottom: 0.2em;
+	}
+	.navbar-brand {
+		font-size: 1.1em;
+	}
+	.petis-banner-top, .petis-banner-top1, .petis-banner-top2, .petis-banner-top3, .petis-banner-top4, .banner-dott {
+		min-height: 680px;
+	}
+	.petis-banner-info {
+		text-align: left;
+		padding: 15em 0 0;
+	}
+	.aboutright {
+		padding: 2em 5em 1em 4em;
+	}
+	.aboutright h3 {
+		font-size: 22px;
+		letter-spacing: 1px;
+	}
+	.petis_stats_left h3 {
+		font-size: 1em;
+	}
+	.aboutright p {
+		letter-spacing: .5px;
+		width: 100%;
+	}
+	.readmore-w3 a {
+		font-size: 15px;
+		padding: .7em 1.5em;
+		letter-spacing: 1px;
+	}
+	.book h3 {
+		font-size: 28px;
+	}
+	.test-review p {
+		width: 70%;
+	}
+	p.date {
+		width: 100%;
+	}
+	.team_grid1 h4 {
+		font-size: 28px;
+		letter-spacing: 0px;
+	}
+	.view .mask, .view .content {
+		padding: 1em 1.3em;
+	}
+	.w3l_team_grid h4 {
+		font-size: 1.2em;
+	}
+	h3.heading {
+		margin-bottom: 35px;
+		font-size: 45px;
+	}
+	.book-background {
+		padding: 5em 0;
+	}
+}
+@media(max-width: 1280px){
+	.petis-nav .petis-ul li{
+		padding:1.5em 1.2em;
+		font-size: 1.2rem
+	}
+	.petis-banner-top, .petis-banner-top1, .petis-banner-top2, .petis-banner-top3, .petis-banner-top4, .banner-dott {
+		min-height: 640px;
+	}
+	.petis-logo {
+		left: .8rem;
+	}
+	.mobile-nav-button {
+		right: 6%;
+		margin: 30px 0 0 0;
+	}
+	.cd-header-buttons {
+		right: 9.5%;
+		top: 30px;
+	}
+	.thim-click-to-bottom {
+		left: 6%;
+		top: 28rem;
+	}
+	.petis-banner-info {
+		padding: 13em 0 0;
+	}
+	.aboutright h3 {
+		font-size: 21px;
+		letter-spacing: 0px;
+	}
+	.petis_stats_left h3 {
+		font-size: 1em;
+	}	
+	.aboutright {
+		padding: 1em 4em 1em 4em;
+	}
+	.aboutright h4 {
+		margin: 1em 0;
+	}
+	.aboutright p {
+		margin: 1em 0;
+	}
+	.petis_stats_left p {
+		margin: 0em 0 0.1em 0;
+	}
+	.petis-button a {
+		padding: 8px 25px;
+		font-size: 14px;
+	}
+	.test-review p {
+		width: 75%;
+	}
+	p.date {
+		width: 100%;
+	}
+
+}
+@media(max-width: 1080px){
+	.thim-click-to-bottom {
+		left: 10%;
+		top: 25rem;
+	}
+	.petis-logo{left: .8rem;
+	}
+	.petis-nav .petis-ul li{
+		padding:1.5em .5em;
+	}
+	.petis-header-buttons {
+		right: 10%;
+	}
+	.petis-banner-info h3 {
+		font-size: 2.3em;
+	}
+	.petis-banner-top, .petis-banner-top1, .petis-banner-top2, .petis-banner-top3, .petis-banner-top4, .banner-dott {
+		min-height: 600px;
+	}
+	.petis-banner-info {
+		padding: 11em 0 0;
+	}
+	.rotate a {
+		font-size: 15px;
+		padding: 9px;
+	}
+	.petis-banner-info p {
+		font-size: .9em;
+		letter-spacing: 4px;
+		margin: 1em auto 2em;
+	}
+	.aboutright {
+		padding: .5em 2em 1em 2em;
+	}
+	.petis-button {
+		margin-top: 2em;
+	}
+	.book-background {
+		padding: 4em 0;
+	}
+	.services-info h4 {
+		font-size: 15px;
+	}
+	
+	.test-review p {
+		width: 90%;
+	}
+	.test-review p.date {
+		width: 100%;
+	}
+	.test-review h5 {
+		letter-spacing: 1px;
+		font-size: 22px;
+	}
+	.overlay {
+		width: 60%;
+	}
+	.petis-division{
+		padding-bottom: 2rem;
+	}
+}
+@media(max-width: 1024px){
+	.thim-click-to-bottom{
+		top: 25rem
+	}
+	.petis-nav .petis-ul li{
+		padding:1.5em .5em;
+	}
+	.petis-logo{left: .8rem;}
+	.petis-banner-top, .petis-banner-top1, .petis-banner-top2, .petis-banner-top3, .petis-banner-top4, .banner-dott {
+		min-height: 560px;
+	}
+	.services,.about,.team {
+		padding: 4em 0;
+	}
+	.contact {
+		padding: 4em 0 0;
+	}
+	.services-grid-2 p {
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+	.services-grid a {
+		padding: 8px 25px;
+		font-size: 14px;
+	}
+	.petis_social_icons ul li a i {
+		width: 33px;
+		height: 33px;
+		font-size: 16px;
+		line-height: 33px;
+	}
+}
+@media(max-width: 998px){
+	.thim-click-to-bottom {
+		left: 10%;
+		top: 26rem;
+	}
+	
+	.aboutleft img.first-image{
+		width: 40%
+	}
+.aboutleft img.second-image{
+	position: relative;
+	transform: rotate(2deg);
+	width: 40%;
+	left: 0;
+	top: 0;
+}
+}
+@media(max-width: 991px){
+	.navbar-brand {
+		font-size: .9em;
+	}
+	.petis-logo {
+		left: .8rem;
+	}
+	.mobile-nav-button {
+		right: 14%;
+		margin: 30px 0 0 0;
+	}
+	.petis-header-buttons {
+		right: 18.5%;
+	}
+	.thim-click-to-bottom {
+		left: 14%;
+		top: 25rem;
+	}
+	.aboutleft {
+		padding: 0;
+		padding-left: 2em;
+		padding-bottom: 1em;
+		width: 60%;
+	}
+	.book h3 {
+		font-size: 25px;
+	}
+	.book p {
+		width: 90%;
+	}
+	.petis_stats_left {
+		width: 25%;
+		float: left;
+	}
+	.services-grid-2 {
+		padding-right: 0em;
+		padding-bottom: 5em;
+	}
+	
+	.petis-search input {
+		font-size: .9em;
+		padding: 1.2em 3em;
+	}
+}
+@media(max-width: 900px){
+	.petis-logo {
+		left: .8rem;
+	}
+	.mobile-nav-button {
+		right: 10%;
+	}
+	.petis-header-buttons {
+		right: 15%;
+	}
+	.thim-click-to-bottom {
+		left: 10%;
+		top: 70%
+	}
+	.petis-search input {
+		font-size: .9em;
+		padding: 1em 3em;
+	}
+	.view .mask, .view .content {
+		padding: 1em 3.5em;
+	}
+	h3.heading {
+		margin-bottom: 30px;
+		font-size: 40px;
+	}
+}
+@media(max-width: 800px){
+	.petis-nav .petis-ul li{
+		font-size: .9rem;
+		padding:1.2em .5em;
+	}
+	.petis-logo {
+		left: .5rem;
+	}
+	.mobile-nav-button {
+		right: 5%;
+	}
+	.petis-header-buttons {
+		right: 10%;
+	}
+	.thim-click-to-bottom {
+		left: 5%;
+		top:75%
+	}
+	.petis-layouts i.fa {
+		font-size: 30px;
+	}
+	.test-review p {
+		width: 100%;
+	}
+	.team_left_grid {
+		width: 68%;
+		margin: 0 auto;
+	}
+}
+@media(max-width: 768px){
+	.aboutleft img.second-image {
+		width: 50%;
+		top: 0;
+		left: 1em;
+		position: relative;
+		transform: rotate(1deg);
+	}
+	.thim-click-to-bottom{
+		top: 24rem
+	}
+.petis-nav .petis-ul li{display:none;}
+.mobile-nav-button {display:block;}
+	.petis-header-buttons {
+		right: 11%;
+	}
+	.petis-banner-info {
+		padding: 10em 1em 0;
+	}
+	.petis-banner-info h3 {
+		font-size: 2.2em;
+	}
+	.petis_more a {
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+.petis-banner-top, .petis-banner-top1, .petis-banner-top2, .petis-banner-top3, .petis-banner-top4, .banner-dott {
+		min-height: 500px;
+	}
+	#small-dialog2 h3,#small-dialog1 h3 {
+		font-size: 28px;
+	}
+	#small-dialog2 input[type="text"], #small-dialog input[type="password"], #small-dialog2 input[type="email"], #small-dialog2 input[type="password"], #small-dialog2 input[type="tel"], select,#small-dialog1 input[type="text"], #small-dialog1 input[type="password"], #small-dialog1 input[type="email"], #small-dialog1 input[type="password"] {
+		font-size: 13px;
+	}
+	.callbacks_tabs {
+		left: 46%;
+	}
+}
+@media(max-width: 736px){
+	.aboutright h3 {
+		font-size: 20px;
+		letter-spacing: 0px;
+	}
+	.petis_stats_left h3 {
+		font-size: .9em;
+	}
+	.petis-course{
+		padding: 1rem 1rem 1rem 1rem;
+	}
+	.book h3 {
+		font-size: 22px;
+	}
+	.services-info-1, .services-info-2, .services-info-3, .services-info-4, .services-info-5, .services-info-6 , .services-info-7, .services-info-8, .services-info-9 {
+		width: 33.33%;
+		float: left;
+	}
+	.overlay ul li a {
+		font-size: .9em;
+	}
+}
+@media(max-width: 667px){
+	.petis-banner-info h3 {
+		font-size: 2em;
+	}
+	.navbar-brand {
+		font-size: .8em;
+	}
+	.cd-header-buttons {
+		right: 12%;
+	}
+	.overlay {
+		width: 35%;
+	}
+	.test-review p {
+		font-size: 14px;
+	}
+	.test-review h5 {
+		letter-spacing: 0px;
+		font-size: 20px;
+	}
+	.team_left_grid {
+		width: 82%;
+		margin: 0 auto;
+	}
+	.cd-header-buttons {
+		top: 25px;
+	}
+	.mobile-nav-button {
+		margin: 25px 0 0 0;
+	}
+	.callbacks_tabs {
+		left: 44%;
+	}
+}
+@media(max-width: 640px){
+	.view .mask, .view .content {
+		padding: 1em 3em;
+	}
+	.footer-grid:nth-child(2) {
+		margin-bottom: 4em;
+	}
+}
+@media(max-width: 600px){
+	.navbar-brand {
+		font-size: .7em;
+	}
+	.petis-banner-info h3 {
+		font-size: 1.8em;
+	}
+	.petis-banner-info p {
+		font-size: .8em;
+		letter-spacing: 3px;
+	}
+	.petis-banner-top, .petis-banner-top1, .petis-banner-top2, .petis-banner-top3, .petis-banner-top4, .banner-dott {
+		min-height: 450px;
+	}
+	.aboutleft {
+		width: 80%;
+	}
+	.aboutright h3 {
+		font-size: 19px;
+	}
+	.petis_stats_left h3 {
+		font-size: .9em;
+	}
+	.aboutright p {
+		font-size: 13px;
+	}
+	.petis_stats_left p {
+		font-size: 2.5em;
+	}
+	.petis-button a {
+		padding: 8px 20px;
+		font-size: 13px;
+	}
+	.book h3 {
+		font-size: 22px;
+		line-height: 30px;
+		width: 88%;
+		margin: 0 auto;
+	}
+	.readmore-w3 a {
+		font-size: 14px;
+		padding: .7em 1em;
+	}
+	.client-review-head {
+		padding: 50px 0 0;
+	}
+	.owl-theme .owl-controls {
+		margin-top: 20px!important;
+		margin-bottom: 20px!important;
+	}
+	.team_left_grid {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.team_grid1 {
+		padding: 3em 3em;
+	}
+	
+	h3.heading {
+		font-size: 35px;
+	}
+	.services, .about, .team {
+		padding: 3em 0;
+	}
+	
+	#small-dialog2 h3,#small-dialog1 h3 {
+		font-size: 25px;
+	}
+	#small-dialog2 input[type="text"], #small-dialog input[type="password"], #small-dialog2 input[type="email"], #small-dialog2 input[type="password"], #small-dialog2 input[type="tel"], select ,#small-dialog1 input[type="text"], #small-dialog1 input[type="password"], #small-dialog1 input[type="email"], #small-dialog1 input[type="password"]{
+		padding: 10px 16px;
+		margin-bottom: 15px;
+	}
+	#small-dialog input[type="submit"], #small-dialog2 input[type="submit"] {
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+	.callbacks_tabs {
+		left: 43%;
+	}
+	.thim-click-to-bottom {
+		left: 10%;
+		top: 23rem;
+}}
+@media(max-width: 568px){
+	.petis-buttons {
+		right: 13%;
+	}
+	.petis-banner-info {
+		padding: 9em 1em 0;
+	}
+	.petis_more a {
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+	.aboutright h3 {
+		font-size: 17px;
+	}
+	.petis_left h3 {
+		font-size: .9em;
+	}
+	.aboutright h4 {
+		font-size: 17px;
+	}
+	.team_left_grid {
+		width: 90%;
+	}
+}
+@media(max-width: 480px){
+	.petis-header-buttons {
+		right: 14%;
+	}
+	.overlay {
+		width: 60%;
+	}
+	.petis-banner-info h3 {
+		font-size: 1.6em;
+		letter-spacing: 0px;
+	}
+	.book p {
+		width: 95%;
+		font-size: 14px;
+	}
+	.services-grid-2 h4, .services-grid-2 h5 {
+		font-size: 15px;
+	}
+	.view .mask, .view .content {
+		padding: 1em 1.5em;
+	}
+	
+	#small-dialog1 input[type="submit"], #small-dialog1 input[type="submit"] {
+		width: 50%;
+		letter-spacing: 1px;
+	}
+	.callbacks_tabs {
+		left: 41%;
+	}
+	.thim-click-to-bottom {
+		left: 10%;
+		top: 22rem;
+}}
+@media(max-width: 414px){
+	.petis-header-buttons {
+		right: 15%;
+	}
+	.thim-click-to-bottom {
+		left: 9%;
+	}
+	.overlay ul li a {
+		font-size: .8em;
+	}
+	.overlay {
+		width: 60%;
+	}
+	.aboutright h4 {
+		font-size: 16px;
+	}
+	.aboutright h3 {
+		font-size: 16px;
+	}
+	.petis_stats_left h3 {
+		font-size: .9em;
+	}
+	.book p {
+		width: 100%;
+		font-size: 13px;
+	}
+	.services-info h4 {
+		font-size: 13px;
+	}
+	.test-review p {
+		font-size: 13px;
+		line-height: 26px;
+	}
+	.petis_social_icons ul li a i {
+		width: 30px;
+		height: 30px;
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.view .mask, .view .content {
+		padding: 1em 1.3em;
+	}
+	
+	#small-dialog1 input[type="submit"], #small-dialog1 input[type="submit"] {
+		padding: 9px 10px;
+		font-size: 13px;
+	}
+	#small-dialog input[type="submit"], #small-dialog2 input[type="submit"] {
+		width: 55%;
+	}
+	.callbacks_tabs {
+		left: 40%;
+	}
+}
+@media(max-width: 384px){
+	.petis-header-buttons {
+		right: 16%;
+	}
+	.aboutleft {
+		width: 90%;
+	}
+	.aboutright h4 {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.aboutright p {
+		font-size: 13px;
+		letter-spacing: 0px;
+	}
+	.book h3 {
+		font-size: 21px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.readmore-w3 a {
+		font-size: 13px;
+		padding: .9em 1em;
+	}
+	.petis_stats_left p {
+		font-size: 2em;
+	}
+	.petis_stats_left {
+		width: 50%;
+		float: left;
+	}
+	.petis i.fa {
+		font-size: 25px;
+	}
+	.services-info h4 {
+		margin-top: 15px;
+	}
+	
+	
+	h3.heading {
+		font-size: 30px;
+	}
+	
+	.petis-search input {
+		padding: 1em 2em;
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+	div#small-dialog1, div#small-dialog2 {
+		padding: 40px;
+	}
+	#small-dialog2 h3, #small-dialog1 h3 {
+		font-size: 23px;
+	}
+	.wthree_mail_pos input[type="submit"] {
+		padding: 8px 0;
+	}
+}
+@media(max-width: 375px){
+	.petis-banner-info h3 {
+		font-size: 1.5em;
+	}
+	.callbacks_tabs {
+		left: 38%;
+	}
+	.owl-theme .owl-controls {
+		margin-top: 10px!important;
+		text-align: center;
+	}
+}
+@media(max-width: 320px){
+	.navbar-brand {
+		font-size: 0.6em;
+	}
+	div#small-dialog1, div#small-dialog2 {
+		padding: 30px 20px;
+	}
+	#small-dialog1 h3,#small-dialog2 h3 {
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+	#small-dialog input[type="submit"], #small-dialog2 input[type="submit"] {
+		margin-top: 10px;
+	}
+	#small-dialog input[type="submit"], #small-dialog2 input[type="submit"] {
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+	.rotate a {
+		font-size: 14px;
+		padding: 7px;
+	}
+	.thim-click-to-bottom {
+		left: 11%;
+		top: 21rem;
+	}
+	.petis-header-buttons {
+		right: 19%;
+	}
+	.aboutright h3 {
+		font-size: 14px;
+		line-height: 28px;
+	}
+	.book h3 {
+		font-size: 19px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.readmore-w3 {
+		margin-top: 0em;
+	}
+	.book li {
+		margin-top: 1.4em;
+	}
+	.services-grid-2 h4, .services-grid-2 h5 {
+		font-size: 14px;
+		line-height: 30px;
+	}
+	.services-info-1, .services-info-2, .services-info-3, .services-info-4, .services-info-5, .services-info-6, .services-info-7, .services-info-8, .services-info-9 {
+		width: 50%;
+		float: left;
+	}
+	.services-info-7, .services-info-8 {
+		margin-bottom: 50px;
+	}
+	.petis_team_grid {
+		width: 100%;
+	}
+	.view .mask, .view .content {
+		padding: 1em 3.3em;
+	}
+	
+	.petis_socila_mail ul li {
+		width: 100%;
+		float: none;
+	}
+	.wthree_copy_right p {
+		letter-spacing: .5px;
+	}
+	.petis-banner-info {
+		padding: 7em 1em 0;
+	}
+	.petis-banner-top, .petis-banner-top1, .petis-banner-top2, .petis-banner-top3, .petis-banner-top4, .banner-dott {
+		min-height: 400px;
+	}
+	.overlay {
+		width: 60%;
+	}
+	#small-dialog1 input[type="text"], #small-dialog1 input[type="password"], #small-dialog1 input[type="email"], #small-dialog1 input[type="password"] {
+		padding: 10px 16px;
+		font-size: 13px;
+	}
+	#small-dialog1 h3 {
+		font-size: 25px;
+	}
+	#small-dialog1 input[type="submit"], #small-dialog1 input[type="submit"] {
+		width: 60%;
+		letter-spacing: 1px;
+		font-size: 13px;
+	}
+	.services-info-1, .services-info-2, .services-info-3, .services-info-4, .services-info-5, .services-info-6 ,.services-info-7, .services-info-8 {
+		margin-bottom: 30px;
+	}
+}
+/*  //Responsive design devices */

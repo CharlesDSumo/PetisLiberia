@@ -1,0 +1,104 @@
+:root{
+    --light:#f8f9fa;
+    --dark:#343a40;
+    --shadow:rgba(255, 255, 255, 0.5);
+    --redish:#dc3545;
+    --charles-color:#e83e8c;
+    --cd-hover: #007bff;
+    --cd-background:rgb(207, 247, 247);
+    --great: rgb(199, 184, 184);
+    --determine: rgb(15, 15, 15);
+  --indigo: #6610f2;
+  --petis-color: #800080;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --deep-yellow:#e0ac1c;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #007bff;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+}
+
+#about-petis{
+    clear: both;
+    margin-top: 3rem;
+    padding: 1rem 7rem 1.2rem 7rem;
+}
+.about-petis-main{
+    clear: both;
+    background-color: var(--petis-color);
+    height: 220px;
+    color: var(--light);
+}
+.petis-abt{
+    padding-top: 8rem;
+    text-align: center;
+}
+.petis-abt p {
+    padding-top: 1rem;
+    color: var(--light);
+}
+.abt-home{
+    color: var(--light);
+    font-size: 1.2rem;
+}
+.abt-home:hover{
+    color: var(--light);
+}
+a.active{
+    color: #343a40;
+    font-size: 1.2rem;
+    padding-left: 2px;
+}
+.petis-abt h2{
+    font-size: 2rem;
+    font-family: 'Oswald' 'Times New Roman', Times, serif, sans-serif;
+    font-weight: 600;
+}
+.petis-h3{
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-bottom: 1.2rem;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+.petis-h4{
+    padding-bottom: 1rem;
+}
+.petis-ul a.petis-active{
+    color: #0000ff;
+}
+.petis-ul li a:hover{
+    color: #0000ff;
+}
+
+.petis-rght img{
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.petis-rght img:hover{
+    transform: scale(1.1);
+}
+/* Mission & Vission */
+    .mission-vission{
+        top: 1.5rem;
+        padding-bottom: 1.2rem;
+    }
+    .mission-vission h2{
+        padding-bottom: 1.2rem;
+        font-size: 2.2rem;
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        font-weight: 600;
+    }
+/* //Mission & Vission */

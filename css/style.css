@@ -1242,8 +1242,15 @@ p.counter {
 	.petis-left-align{
 		text-align: left;
 	}
-	.abt-dev{
-		color: 
+	a#abt-dev{
+		color: var(--petis-color)
+	}
+	.footer .footer-icons{
+		padding-right: 1rem;
+		font-size: 1.5rem;
+	}
+	.footer a.footer-icons .fa:hover{
+		color: var(--light);
 	}
 /* //Footer section */
 

@@ -1,6 +1,6 @@
 /* Sticky navigation */
 .sticky{
-    background-color: rgba(0, 0, 0, 0.5) ;
+    background-color: rgba(0, 0, 0, 0.2) ;
     width: 100%;
     position: fixed !important;
     top: 0;
